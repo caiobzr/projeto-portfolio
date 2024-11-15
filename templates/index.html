@@ -519,11 +519,12 @@
                                 </div>
 
                                 <div class="col-12 d-flex justify-content-center mt-4">
-                                    <button id="btn-enviar" type="submit" class="btn btn-primary">Enviar mensagem</button>
+                                    <button id="btn-enviar" type="submit" class="btn btn-primary">Enviar
+                                        mensagem</button>
                                     <button id="btn-enviar-loader" class="btn btn-primary" type="button" disabled>
                                         <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
                                         <span role="status">Enviando...</span>
-                                      </button>
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -533,7 +534,27 @@
 
         </section>
 
+        
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <div id="alerta" class="alert alert-success alert-dismissible fade show" role="alert" data-anime="left">
+            <i class="bi bi-check-circle-fill"></i> {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+
     </main>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="text-center">
+                &copy; Copyright <strong>Beli Code</strong>
+            </div>
+        </div>
+    </footer>
 
     <script src="../static/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../static/script.js"></script>

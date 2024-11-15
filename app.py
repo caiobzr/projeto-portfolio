@@ -7,7 +7,7 @@ app.secret_key = 'Hrx10'
 
 mail_settings = {
     "MAIL_SERVER": 'smtp.gmail.com',
-    "MAIL_PORT": 465,
+    "MAIL_PORT": 465, ## ou 465 ou 587
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
     "MAIL_USERNAME": email,
