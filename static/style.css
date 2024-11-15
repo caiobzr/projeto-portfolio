@@ -282,3 +282,7 @@ i.menu-mobile {
     }
     
 }
+
+#btn-enviar-loader{
+    display: none;
+}

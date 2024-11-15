@@ -505,21 +505,25 @@
                                 <div class="col-md-6">
                                     <label for="nome" class="form-label">Nome:</label>
                                     <input type="text" class="form-control" id="nome" name='nome'
-                                        placeholder="Digite seu nome">
+                                        placeholder="Digite seu nome" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="email" class="form-label">E-mail:</label>
                                     <input type="email" class="form-control" id="email" name='email'
-                                        placeholder="Digite seu e-mail">
+                                        placeholder="Digite seu e-mail" required>
                                 </div>
                                 <div class="col-12">
                                     <label for="mensagem" class="form-label">Mensagem: </label>
                                     <textarea type="text" class="form-control" id="mensagem" name='mensagem' rows="10"
-                                        placeholder="Digite sua mensagem"></textarea>
+                                        placeholder="Digite sua mensagem" required></textarea>
                                 </div>
 
                                 <div class="col-12 d-flex justify-content-center mt-4">
-                                    <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                                    <button id="btn-enviar" type="submit" class="btn btn-primary">Enviar mensagem</button>
+                                    <button id="btn-enviar-loader" class="btn btn-primary" type="button" disabled>
+                                        <span class="spinner-border spinner-border-sm" aria-hidden="true"></span>
+                                        <span role="status">Enviando...</span>
+                                      </button>
                                 </div>
                             </form>
                         </div>
