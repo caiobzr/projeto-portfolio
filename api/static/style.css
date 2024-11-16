@@ -92,7 +92,7 @@ html, body{
 }
 
 section#inicio {
-    background-image: url("https://discord.com/channels/@me/1152643737818775736/1307236523145691158");
+    background-image: url("../static/img/caio-guita.JPG");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
